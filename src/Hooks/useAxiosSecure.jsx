@@ -7,7 +7,7 @@ const useAxiosSecure = () => {
     const {logOut} = useAuth()
     const navigate= useNavigate()
     const axiosSecure =axios.create({
-        baseURL:'http://localhost:5000'
+        baseURL:'https://bistro-boss-server-ten-teal.vercel.app'
     });
     useEffect(() =>{
         axiosSecure.interceptors.request.use((config) =>{

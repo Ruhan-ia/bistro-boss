@@ -17,7 +17,7 @@ const FoodCard = ({item}) => {
         const orderItem = {menuId:_id, image, name, price, recipe, email:user.email
 
         }
-        fetch('http://localhost:5000/carts',{
+        fetch('https://bistro-boss-server-ten-teal.vercel.app/carts',{
           method:'POST',
           headers:{
             'content-type':'application/json'
